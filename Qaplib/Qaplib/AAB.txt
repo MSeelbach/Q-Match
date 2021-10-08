@@ -1,0 +1,60 @@
+import numpy as np
+
+f = open('bur26a.dat','r')
+liste= []
+liste2= []
+
+counter=0
+for l in f:
+       if counter==0:
+            dimension= int(l) 
+            
+       if counter>1 and counter <28:
+    
+           g = np.array([int(v) for v in l.strip().split(" ")])
+           liste.append(g)
+       if counter>28 and counter<55:
+           g = np.array( [ v for v in l.strip().split(" ")])
+           g= np.delete(g,np.where(g==''))
+
+                
+           g= [int(elem) for elem in g]
+            
+           liste2.append(g)
+       counter = counter +1
+A= np.array(liste)
+B= np.array(liste2)
+
+
+
+
+f = open('bur26a.sln','r')
+counter=0
+for l in f :
+        if counter==0:
+            
+            r =  np.array([v for v in l.strip().split(" ")])
+            r= np.delete(r,np.where(r==''))
+
+                
+            r= [int(elem) for elem in r]
+    
+        if counter == 1:
+    
+           g = np.array( [ v for v in l.strip().split(" ")])
+           g= np.delete(g,np.where(g==''))
+
+                
+           g= [int(elem) for elem in g]        
+        
+        
+        if counter==2:
+           e = np.array( [ v for v in l.strip().split(" ")])
+           e= np.delete(e,np.where(e==''))
+
+                
+           e= [int(elem) for elem in e]
+        counter = counter +1
+        
+permutationSol= np.hstack([g,e] )
+
