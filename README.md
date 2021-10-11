@@ -11,6 +11,10 @@ You can run the code with D-Wave leap: https://www.dwavesys.com/take-leap.
  ## Qaplib
   In the folder Qaplib/Qaplib there are the problem instances from https://www.opt.math.tugraz.at/qaplib/. Only some linebreaks have been added for the readout.
 
+## How to run?
+Execute the corresponding Main.py file.
+
+
 ## License
 Permission is hereby granted, free of charge, to any person or company obtaining a copy of this software and associated documentation files (the "Software") from the copyright holders to use the Software for any non-commercial purpose. Publication, redistribution and (re)selling of the software, of modifications, extensions, and derivates of it, and of other software containing portions of the licensed Software, are not permitted. The Copyright holder is permitted to publically disclose and advertise the use of the software by any licensee.
 
